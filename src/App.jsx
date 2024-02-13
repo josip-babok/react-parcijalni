@@ -67,11 +67,6 @@ const App = () => {
       </main>
     </>
   );
-  if (!prikazUser) {
-    return;
-  } else {
-    return <UserIspis user={user} repos={repos} reset={reset} />;
-  }
 };
 
 export default App;
