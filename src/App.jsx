@@ -31,8 +31,8 @@ const App = () => {
       });
   };
 
-  const dohvatiRepos = (userName) => {
-    fetch(`https://api.github.com/users/${userName}/repos`)
+  const dohvatiRepos = (username) => {
+    fetch(`https://api.github.com/users/${username}/repos`)
       .then((res) => {
         if (!res.ok) {
           throw new Error("Korisnik nije pronađen");
